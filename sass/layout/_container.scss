@@ -1,0 +1,92 @@
+.container {
+    &__heading {
+        &__photo {
+            width: 100%;
+            position: absolute;
+        }
+
+        &__titleIcone {
+            position: relative;
+            padding-top: 60%;
+            display: flex;
+            justify-content: space-between;
+
+            &--top {
+                padding-top: 50%;
+            }
+
+            &__title {
+                background-color: #F6F6F6;
+                width: 100%;
+                border-top-left-radius: 25px;
+                padding-top: 7%;
+                padding-left: 9%;
+            }
+
+            &__icone {
+                background-color: #F6F6F6;
+                border-top-right-radius: 30px;
+                width: 10%;
+                padding-top: 10%;
+                padding-right: 5%;
+            }
+        }
+    }
+
+    &__menu {
+        padding-left: 5%;
+        background-color: #F6F6F6;
+
+        &__title {
+            font-size: 15px;
+            opacity: 0.7;
+            padding: 5% 0 5% 5%;
+
+            &--padding {
+                padding-top: 10%;
+            }
+        }
+
+        &__span {
+            border-bottom: 3px solid $colour-tertiary;   
+        }
+
+        &__plates {
+            padding-top: 5%;
+        }
+
+        &__informations {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            background-color: $colour-quaternary;
+            box-shadow: 0px 0px 15px 5px rgba(233,233,233,1);
+            padding: 5%;
+            border-radius: 15px;
+
+            &__heading {
+                &__title {
+                    font-size: 15px;
+                    padding-bottom: 3%;
+                    width: 100%;
+                }
+
+                &__paragraphe {
+                    font-size: 13px;
+                    opacity: 0.7;
+                    width: 100%;
+                }
+            }
+
+            &__price {
+                align-self: flex-end;
+
+                &__paragraphe {
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

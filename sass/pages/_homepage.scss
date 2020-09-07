@@ -1,0 +1,163 @@
+.homePageHeader {
+    &__title {
+        text-align: center;
+        padding: 5% 0;
+    }
+
+    &__location {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to bottom, #CFCFCF, #EAEAEA 30%); 
+        padding: 5% 0;
+    }
+        &__location__icone {
+            padding-right: 5%;
+        }
+
+        &__location__city {
+            opacity: 0.8;
+        }
+}
+
+.contenuHomePage {
+    &__informations {
+        background-color: #F6F6F6;
+        padding: 15% 0;
+
+        &__title {
+            padding-bottom: 10%;
+            text-align: center;
+        }
+
+        &__paragraphe {
+            padding: 0 3% 7%;
+            text-align: center;
+            opacity: 0.5;
+        }
+    } 
+    
+    &__steps {
+        padding: 10% 0;
+
+        &__title {
+            padding: 0 0 5% 5%;
+        }
+
+        &__step {
+            display: flex;
+            padding: 3% 7%;
+            align-items: center;
+
+            &__number {
+
+                &--rounded {
+                    display: block;
+                    border-radius: 50%;
+                    height: 15px;
+                    background: $colour-primary;
+                    width: 23px;
+                    color: $colour-primary;
+                    text-align: center;
+                    font-size: 10px;
+                    padding-top: 1%;
+                }
+            }
+
+            &__iconeP {
+                display: flex;
+                width: 100%;
+                background-color: #F6F6F6; 
+                box-shadow: 0 10px 3px -6px #E6E6E6;
+
+                &--rounded {
+                    padding: 7% 4%;
+                    border: none;
+                    border-radius: 20px;
+                    margin: 0;
+                }
+
+                &--pink {
+                    background-color: #F5EDFF;
+                }
+                
+                &__icone {
+                    width: 10%;
+                    align-self: center;
+                    display: flex;
+                    justify-content: center;
+    
+                    &--grey {
+                        color: #7E7E7E;
+                    }
+    
+                    &--purple {
+                        color: $colour-primary;
+                    }
+                }
+    
+                &__paragraphe {
+                    padding-left: 5%;
+                    font-weight: bold;
+                }
+            }
+        }    
+    }
+
+    &__restaurants {
+        background-color: #F6F6F6;
+
+        &__title {
+            padding: 10% 0 0 7%;
+        }
+
+        &__links {
+            text-decoration: none;
+            color: black;
+        }
+
+        &__card {
+            padding: 10% 5%;
+
+            &__imageText {
+                position: relative;
+                background-color: $colour-primary;
+
+                &__image {
+                    max-width: 100%;
+                    border-top-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                    margin-bottom: -5px;
+                }
+
+                &__text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(45%, -270%);
+                    background-color: $colour-tertiary;
+                    color: #008766;
+                    padding: 2% 10%;
+                    border-radius: 3px;
+                    font-weight: bold;
+                }
+            }
+
+            &__informations {
+                background-color: $colour-quaternary;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                box-shadow: 0px 10px 10px #E6E6E6;
+                display: flex;
+                justify-content: space-between;
+                padding: 5%;
+
+                &__text {
+                    &__paragraphe {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }  
+}
+    

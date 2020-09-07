@@ -1,0 +1,39 @@
+.footer {
+    background-color: #353535;
+    padding: 7% 0 10% 7%;
+
+    &__title {
+        padding-bottom: 5%;
+        padding-left: 3%;
+        color: $colour-quaternary;
+        opacity: 0.9;
+        font-size: 23px;
+    }
+
+    &__links {
+        opacity: 0.8;
+
+        &__link {
+            display: flex;
+        }
+
+        &--notUnderlined {
+            text-decoration: none;
+        }
+
+        &--white {
+            color: $colour-quaternary;
+        }
+
+        &__icone {
+            width: 10%;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__paragraphe {
+            padding-left: 3%;
+        }
+    }
+}
