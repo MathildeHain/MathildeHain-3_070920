@@ -1,0 +1,19 @@
+.header {
+    padding: 5%;
+    
+    &__link {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icone {
+        align-self: center;
+    }
+
+    &__title {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
