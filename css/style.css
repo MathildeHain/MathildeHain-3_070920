@@ -56,6 +56,98 @@ h1, .container__heading__titleIcone__title--font {
   box-shadow: 0px 0px 13px -1px #919191;
 }
 
+/*Animations boutons coeurs*/
+@keyframes gradient {
+  0% {
+    color: #FFFFFF;
+  }
+  10% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, #FFFFFF 0%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, #FFFFFF 10%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, #FFFFFF 20%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, #FFFFFF 30%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, #FFFFFF 40%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, #FFFFFF 50%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, #FFFFFF 60%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, #FFFFFF 70%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  90% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, #FFFFFF 80%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.contenuHomePage__restaurants__card__informations__button__jauge {
+  font-size: 15px;
+  color: #FFFFFF;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.contenuHomePage__restaurants__card__informations__button__jauge:hover {
+  font-size: 15px;
+  animation: gradient 1s;
+  animation-fill-mode: forwards;
+}
+
+.container__heading__titleIcone__icone {
+  color: #FFFFFF;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: #F6F6F6;
+}
+.container__heading__titleIcone__icone:hover {
+  background-color: #F6F6F6;
+  animation: gradient 1s;
+  animation-fill-mode: forwards;
+}
+
 .homePageHeader__title {
   text-align: center;
   padding: 5% 0;
