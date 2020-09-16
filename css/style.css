@@ -146,6 +146,8 @@ h1, .container__heading__titleIcone__title--font {
   background-color: #F6F6F6;
   animation: gradient 1s;
   animation-fill-mode: forwards;
+  position: fixed;
+  transform: translate(280px, 0px);
 }
 
 /*Loading spinner*/
@@ -420,7 +422,6 @@ h1, .container__heading__titleIcone__title--font {
   padding-left: 9%;
 }
 .container__heading__titleIcone__icone {
-  background-color: #F6F6F6;
   border-top-right-radius: 30px;
   width: 10%;
   padding-top: 10%;
