@@ -53,15 +53,17 @@
                 transform: translate(10px, 0px);
 
                 &--rounded {
-                    display: block;
+                    padding-top: 0;
+                    padding-bottom: 1px;
+                    height: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-radius: 50%;
-                    height: 15px;
                     background: $colour-primary;
                     width: 23px;
                     color: $colour-quaternary;
-                    text-align: center;
                     font-size: 10px;
-                    padding-top: 1%;
                 }
             }
 
@@ -124,7 +126,6 @@
 
             &__imageText {
                 position: relative;
-                background-color: $colour-tertiary;
 
                 &__image {
                     max-width: 100%;
