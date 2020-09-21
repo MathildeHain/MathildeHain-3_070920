@@ -318,7 +318,7 @@ h1, .container__heading__titleIcone__title--font {
   }
 }
 .container__menu__informations__price {
-  transform: translate(0px, -15px);
+  transform: translate(5px, -15px);
 }
 .container__menu__informations__animation {
   display: none;

@@ -247,6 +247,7 @@
     0% {
         color: #F6F6F6;
         background-color: #F6F6F6;
+        
     }
     10% {
         color:#F6F6F6;
@@ -285,7 +286,7 @@
 
 .container__menu__informations {
     &__price {
-        transform: translate(0px, -15px);
+        transform: translate(5px, -15px);
     }
 
     &__animation {
