@@ -1,0 +1,62 @@
+/*Home page*/ 
+@media screen and (max-width: 1400px) and (min-width: 734px) {
+    .contenuHomePage {
+        &__informations {
+            padding: 5% 0%;
+
+            &__title {
+                padding-bottom: 5%;
+            }
+
+            &__paragraphe {
+                padding: 0 3% 5%;
+            }
+
+            &__button--rounded {
+                padding: 3% 3%;
+            }
+        }
+
+        &__steps {
+            padding: 5% 0;
+
+            &__title {
+                padding: 0 0 3% 7%;
+            }
+
+            &__step {
+                &__number {
+                    &--rounded {
+                        height: 20px;
+                    }
+                }
+
+                &__iconeP {
+                    &--rounded {
+                        padding: 5% 1%;
+                    }
+
+                    &__icone {
+                        padding: 0%;
+                    }
+
+                    &__paragraphe {
+                        padding: 0%;
+                    }
+                }
+            }
+            
+        }
+        &__restaurants {
+            &--flex {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 3%;
+}
+
