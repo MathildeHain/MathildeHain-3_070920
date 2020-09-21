@@ -61,10 +61,11 @@
             margin-right: 5%;
             background-color: $colour-quaternary;
             box-shadow: 0px 0px 15px 5px rgba(233,233,233,1);
-            padding: 5%;
             border-radius: 15px;
 
             &__heading {
+                padding: 5%;
+                
                 &__title {
                     font-size: 15px;
                     padding-bottom: 3%;

@@ -146,8 +146,12 @@ h1, .container__heading__titleIcone__title--font {
   background-color: #F6F6F6;
   animation: gradient 1s;
   animation-fill-mode: forwards;
-  position: fixed;
+  position: absolute;
   transform: translate(280px, 0px);
+  border-top-right-radius: 30px;
+  width: 10%;
+  padding-top: 10%;
+  padding-right: 5%;
 }
 
 /*Loading spinner*/
@@ -274,6 +278,63 @@ h1, .container__heading__titleIcone__title--font {
     opacity: 1;
   }
 }
+/*Coche*/
+@keyframes translate {
+  0% {
+    color: #F6F6F6;
+    background-color: #F6F6F6;
+  }
+  10% {
+    color: #F6F6F6;
+    background-color: #F6F6F6;
+  }
+  20% {
+    color: #F6F6F6;
+    background-color: #F6F6F6;
+  }
+  30% {
+    width: 2%;
+  }
+  40% {
+    width: 4%;
+  }
+  50% {
+    width: 6%;
+  }
+  60% {
+    width: 8%;
+  }
+  70% {
+    width: 10%;
+  }
+  80% {
+    width: 12%;
+  }
+  90% {
+    width: 14%;
+  }
+  100% {
+    width: 16%;
+  }
+}
+.container__menu__informations__price {
+  transform: translate(0px, -15px);
+}
+.container__menu__informations__animation {
+  display: none;
+  background-color: #99E2D0;
+  color: #FFFFFF;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.container__menu__informations__animation__icone {
+  transform: translate(15px, 25px);
+}
+.container__menu__informations:hover > .container__menu__informations__animation {
+  display: flex;
+  animation: translate 1s forwards;
+}
+
 .homePageHeader__title {
   text-align: center;
   padding: 5% 0;
@@ -477,8 +538,10 @@ h1, .container__heading__titleIcone__title--font {
   margin-right: 5%;
   background-color: #FFFFFF;
   box-shadow: 0px 0px 15px 5px #e9e9e9;
-  padding: 5%;
   border-radius: 15px;
+}
+.container__menu__informations__heading {
+  padding: 5%;
 }
 .container__menu__informations__heading__title {
   font-size: 15px;
