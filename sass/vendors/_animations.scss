@@ -243,66 +243,118 @@
 }
     
 /*Coche*/
-@keyframes translate {
+@keyframes price {
     0% {
-        color: #F6F6F6;
-        background-color: #F6F6F6;
-        
+        transform: translate(-5px, 0px)
     }
     10% {
-        color:#F6F6F6;
-        background-color: #F6F6F6;
+        transform: translate(-7px, 0px)
     }
     20% {
-        color: #F6F6F6;
-        background-color: #F6F6F6;
+        transform: translate(-9px, 0px)
     }
     30% {
-        width: 2%;
+        transform: translate(-11px, 0px)
     }
     40% {
-        width: 4%;
+        transform: translate(-13px, 0px)
     }
     50% {
-        width: 6%;
+        transform: translate(-15px, 0px)
     }
     60% {
-        width: 8%;
+        transform: translate(-16px, 0px) 
     }
     70% {
-        width: 10%;
+        transform: translate(-17px, 0px)
     }
     80% {
-        width: 12%;
+        transform: translate(-18px, 0px)
     }
     90% {
-        width: 14%;
+        transform: translate(-19px, 0px)
     }
     100% {
-        width: 16%;
+        transform: translate(-20px, 0px)
     }
 }
 
+@keyframes check {
+    0% {
+        width: 0;
+    }
+    10% {
+        width: 2%;
+    }
+    20% {
+        width: 4%;
+    }
+    30% {
+        width: 6%;
+    }
+    40% {
+        width: 8%;
+    }
+    50% {
+        width: 10%;
+    }
+    60% {
+        width: 12%;
+    }
+    70% {
+        width: 14%;
+    }
+    80% {
+        width: 15%;
+    }
+    90% {
+        width: 16%;
+    }
+    100% {
+        width: 19%;
+    }
+}
 
 .container__menu__informations {
+    &:hover > .container__menu__informations__animation {
+        display: flex;
+        animation: check 1s forwards;
+        background-color: $colour-tertiary;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(360deg);
+    }
+
+    &:hover > .container__menu__informations__price {
+        animation: price 1s forwards;
+    }
+
+    &__heading {
+        width: 60%;
+        
+        &__paragraphe {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            transition: width 0.3s ease-out;
+            &:hover {
+                width: 60%;
+            }
+        }
+    }
+
     &__price {
-        transform: translate(5px, -15px);
+        padding-right: 5%;
+        padding-bottom: 5%;
     }
 
     &__animation {
         display: none;
-        background-color: $colour-tertiary;
+        transition: width 1s;
         color: $colour-quaternary;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        &__icone {
-            transform: translate(15px, 25px);
-        }
-    }
-
-    &:hover > .container__menu__informations__animation {
-        display: flex;
-        animation: translate 1s forwards;
-       
+        transition: transform 1s;
     }
 }

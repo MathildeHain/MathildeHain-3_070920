@@ -279,60 +279,111 @@ h1, .container__heading__titleIcone__title--font {
   }
 }
 /*Coche*/
-@keyframes translate {
+@keyframes price {
   0% {
-    color: #F6F6F6;
-    background-color: #F6F6F6;
+    transform: translate(-5px, 0px);
   }
   10% {
-    color: #F6F6F6;
-    background-color: #F6F6F6;
+    transform: translate(-7px, 0px);
   }
   20% {
-    color: #F6F6F6;
-    background-color: #F6F6F6;
+    transform: translate(-9px, 0px);
   }
   30% {
-    width: 2%;
+    transform: translate(-11px, 0px);
   }
   40% {
-    width: 4%;
+    transform: translate(-13px, 0px);
   }
   50% {
-    width: 6%;
+    transform: translate(-15px, 0px);
   }
   60% {
-    width: 8%;
+    transform: translate(-16px, 0px);
   }
   70% {
-    width: 10%;
+    transform: translate(-17px, 0px);
   }
   80% {
-    width: 12%;
+    transform: translate(-18px, 0px);
   }
   90% {
-    width: 14%;
+    transform: translate(-19px, 0px);
   }
   100% {
-    width: 16%;
+    transform: translate(-20px, 0px);
   }
 }
-.container__menu__informations__price {
-  transform: translate(5px, -15px);
-}
-.container__menu__informations__animation {
-  display: none;
-  background-color: #99E2D0;
-  color: #FFFFFF;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.container__menu__informations__animation__icone {
-  transform: translate(15px, 25px);
+@keyframes check {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 2%;
+  }
+  20% {
+    width: 4%;
+  }
+  30% {
+    width: 6%;
+  }
+  40% {
+    width: 8%;
+  }
+  50% {
+    width: 10%;
+  }
+  60% {
+    width: 12%;
+  }
+  70% {
+    width: 14%;
+  }
+  80% {
+    width: 15%;
+  }
+  90% {
+    width: 16%;
+  }
+  100% {
+    width: 19%;
+  }
 }
 .container__menu__informations:hover > .container__menu__informations__animation {
   display: flex;
-  animation: translate 1s forwards;
+  animation: check 1s forwards;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(360deg);
+}
+.container__menu__informations:hover > .container__menu__informations__price {
+  animation: price 1s forwards;
+}
+.container__menu__informations__heading {
+  width: 60%;
+}
+.container__menu__informations__heading__paragraphe {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: width 0.3s ease-out;
+}
+.container__menu__informations__heading__paragraphe:hover {
+  width: 60%;
+}
+.container__menu__informations__price {
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+.container__menu__informations__animation {
+  display: none;
+  transition: width 1s;
+  color: #FFFFFF;
+  transition: transform 1s;
 }
 
 .homePageHeader__title {
