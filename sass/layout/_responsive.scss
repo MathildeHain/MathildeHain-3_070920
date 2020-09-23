@@ -1,5 +1,11 @@
 /*Home page*/ 
-@media screen and (max-width: 1400px) and (min-width: 734px) {
+    /*Mobile L*/
+@media screen and (max-width: 767px) and (min-width: 425px) {
+
+}
+
+    /*TABLETS*/ 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
     .contenuHomePage {
         &__informations {
             padding: 5% 0%;
@@ -58,5 +64,387 @@
 
 .footer {
     padding: 3%;
+}
+
+    /*LAPTOP*/ 
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+    .homePageHeader {
+        &__title {
+            padding: 3% 0;
+        }
+
+        &__location {
+            padding: 3% 0;
+
+            &__icone {
+                padding-right: 1%;
+            }
+        }
+    }
+
+    .contenuHomePage {
+        &__informations {
+            padding: 0;
+            padding-bottom: 3%;
+
+            &__title {
+                padding: 3%;
+            }
+
+            &__paragraphe {
+                padding: 0 0 3%;
+            }
+
+            &__button--rounded {
+                padding: 1.5% 3%
+            }
+        }
+
+        &__steps {
+            padding: 0;
+            
+            &__title {
+                padding: 4% 0 2% 0;
+                text-align: center;
+            }   
+            
+            &__step {
+                &__iconeP {
+                    padding: 3% 1%;
+                }
+            }
+        }
+
+        &__restaurants {
+            padding-bottom: 5%;
+
+            &--flex {
+                display: flex;
+                width: 80%;
+                margin: auto;
+            }
+
+            &__title {
+                padding: 5% 0 2% 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .footer {
+        &__title {
+            padding-bottom: 3%;
+        }
+
+        &__links {
+            &__icone {
+                width: 70px;
+            }
+        }
+    }
+}
+
+    /*LAPTOP L*/
+@media screen and (max-width: 2559px) and (min-width: 1440px) {
+    .homePageHeader {
+        &__title {
+            padding: 4%;
+            font-size: 45px;
+        }
+
+        &__location {
+            font-size: 20px;
+
+            &__icone {
+                padding-right: 1%;
+            }
+        }
+    }
+
+    .contenuHomePage {
+        &__informations {
+            padding-top: 5%;
+            padding-bottom: 5%;
+
+            &__title {
+                font-size: 30px;
+                padding-bottom: 5%;
+            }
+
+            &__paragraphe {
+                padding-bottom: 5%;
+                font-size: 20px;
+            }
+
+            &__button--rounded {
+                padding: 2% 7%;
+                font-size: 17px;            
+            }
+        }
+
+        &__steps {
+            padding-top: 5%;
+
+            &__title {
+                padding: 0;
+                padding-bottom: 2%;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            &__step {
+                &__iconeP {
+                    padding: 4% 0;
+                    font-size: 20px;
+                    border-radius: 90px;
+
+                    &__paragraphe {
+                        opacity: 0.7;
+                        padding: 0;
+                    }
+
+                    &__icone {
+                        padding: 0;
+                        width: 60px;
+                        padding-left: 40px;
+                        padding-right: 20px;                    
+                    }
+                }
+
+                &__number {
+                    width: 40px;
+                    height: 35px;
+                    font-size: 15px;
+                    transform: translate(23px, 0px);
+                }
+            }
+        }
+
+        &__restaurants {
+            &--flex {
+                display: flex;
+                width: 1200px;
+                margin: auto;
+            }
+
+            &__title {
+                padding: 5% 0 0 0;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            &__card {
+                &__informations {
+                    font-size: 120%;
+                }
+
+                &__imageText {
+                    &__text {
+                        transform: translate(70%, -350%);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__title {
+            padding-bottom: 3%;
+            font-size: 33px;
+        }
+
+        &__links {
+            font-size: 115%;
+
+            &__icone {
+                width: 4%;
+                padding-left: 2%;
+            }
+        }
+    }
+}
+
+    /*4K*/ 
+@media screen and (min-width: 2560px) {
+    .loader {
+        display: none;
+    }
+
+    .homePageHeader, .contenuHomePage {
+        animation: none;
+    }
+
+    .homePageHeader {
+        &__title {
+            font-size: 400%;
+            padding: 3.5% 0;
+        }
+
+        &__location {
+            font-size: 200%;
+            padding: 3% 0;
+
+            &__icone {
+                padding-right: 1%;
+            }
+        }
+    }
+
+    .contenuHomePage {
+        &__informations {
+            padding: 4% 0;
+
+            &__title {
+                font-size: 300%;
+                padding: 0;
+                padding-bottom: 3%;
+            }
+
+            &__paragraphe {
+                font-size: 200%;
+                padding-bottom: 3%;            
+            }
+            
+            &__button--rounded {
+                padding: 2% 7%;
+                font-size: 170%;
+            }
+        }
+
+        &__steps {
+            padding: 4% 0;
+            
+            &__title {
+                font-size: 300%;
+                padding: 0 0 1% 0;
+                text-align: center;
+            }
+
+            &__step {
+                &__iconeP {
+                    padding: 2.5%;
+                    font-size: 210%;
+
+                    &__paragraphe {
+                        padding-left: 0;
+                    }
+
+                    &__icone {
+                        padding-left: 0;
+                    }
+                }
+
+                &__number {
+                    width: 3%;
+                    height: 60px;
+                    font-size: 150%;
+                    transform: translate(30px, 0px);                
+                }
+            }
+        }
+
+        &__restaurants {
+            padding-bottom: 3%;
+
+            &--flex {
+                display: flex;
+                width: 70%;
+                margin: auto;
+            }
+
+            &__title {
+                font-size: 300%;
+                padding: 4% 0;
+                text-align: center;
+                padding-bottom: 0;
+            }
+
+            &__card {
+                &__informations {
+                    font-size: 200%;
+
+                    &__button__jauge {
+                        font-size: 130%;
+                    }
+                }
+
+                &__imageText {
+                    &__text {
+                        font-size: 180%;
+                        transform: translate(60%, -300%);
+                    }
+                }
+            }
+        }
+
+        .footer {
+            &__title {
+                font-size: 300%;
+                padding: 0;
+                padding-bottom: 2.5%;
+            }
+
+            &__links {
+                font-size: 190%;
+            }
+        }
+    }
+}
+
+/*MENUS*/
+@media screen and (max-width: 3000px) and (min-width: 760px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .palette {
+        background-image: url(file://C:/Users/Mathilde/Documents/P3/MathildeHain_3_07092020/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    }
+
+    .enchanted {
+        background-image: url(file://C:/Users/Mathilde/Documents/P3/MathildeHain_3_07092020/public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+
+    .bastille {
+        background-image: url(file://C:/Users/Mathilde/Documents/P3/MathildeHain_3_07092020/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+
+    .gourmand {
+        background-image: url(file://C:/Users/Mathilde/Documents/P3/MathildeHain_3_07092020/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    }
+
+    header {
+        background-color: $colour-quaternary;
+    }
+
+    .container {
+        margin-bottom: 10%;
+
+        &__heading {
+            &__photo {
+                display: none;
+            }
+
+            &__titleIcone {
+                padding-top: 10%;
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+        }
+
+        &__menu {
+            margin-right: 25%;
+            margin-left: 25%;
+            padding-right: 5%;
+            border-bottom-right-radius: 45px;
+            border-bottom-left-radius: 45px;
+        }
+
+        &__button {
+            padding-bottom: 14%;
+        }
+    }
 }
 
