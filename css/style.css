@@ -140,18 +140,9 @@ h1, .container__heading__titleIcone__title--font {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  background-color: #F6F6F6;
 }
 .container__heading__titleIcone__icone:hover {
-  background-color: #F6F6F6;
-  animation: gradient 1s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  transform: translate(280px, 0px);
-  border-top-right-radius: 30px;
-  width: 10%;
-  padding-top: 10%;
-  padding-right: 5%;
+  animation: gradient 1s forwards;
 }
 
 /*Loading spinner*/
@@ -351,18 +342,28 @@ h1, .container__heading__titleIcone__title--font {
     width: 19%;
   }
 }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .container__menu__informations:hover > .container__menu__informations__animation {
   display: flex;
-  animation: check 1s forwards;
+  animation: check 0.6s forwards;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   justify-content: center;
   align-items: center;
-  transform: rotate(360deg);
 }
 .container__menu__informations:hover > .container__menu__informations__price {
   animation: price 1s forwards;
+}
+.container__menu__informations:hover > .container__menu__informations__animation__icone {
+  animation: spin 1s linear forwards;
 }
 .container__menu__informations__heading {
   width: 60%;
@@ -382,10 +383,7 @@ h1, .container__heading__titleIcone__title--font {
   padding-bottom: 5%;
 }
 .container__menu__informations__animation {
-  display: none;
-  transition: width 1s;
   color: #FFFFFF;
-  transition: transform 1s;
 }
 
 .homePageHeader__title {
@@ -546,6 +544,7 @@ h1, .container__heading__titleIcone__title--font {
   position: absolute;
 }
 .container__heading__titleIcone {
+  text-align: center;
   position: relative;
   padding-top: 60%;
   display: flex;
@@ -558,18 +557,17 @@ h1, .container__heading__titleIcone__title--font {
   background-color: #F6F6F6;
   width: 100%;
   border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   padding-top: 7%;
-  padding-left: 9%;
 }
 .container__heading__titleIcone__icone {
-  border-top-right-radius: 30px;
   width: 10%;
-  padding-top: 10%;
-  padding-right: 5%;
+  padding-left: 9%;
 }
 .container__menu {
   padding-left: 5%;
   background-color: #F6F6F6;
+  padding-right: 5%;
 }
 .container__menu__title {
   font-size: 15px;
@@ -589,10 +587,10 @@ h1, .container__heading__titleIcone__title--font {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
-  margin-right: 5%;
   background-color: #FFFFFF;
   box-shadow: 0px 0px 15px 5px #e9e9e9;
   border-radius: 15px;
+  cursor: pointer;
 }
 .container__menu__informations__heading {
   padding: 5%;
@@ -613,6 +611,11 @@ h1, .container__heading__titleIcone__title--font {
 .container__menu__informations__price__paragraphe {
   font-size: 13px;
   font-weight: bold;
+}
+.container__button {
+  margin: 0;
+  padding-bottom: 10%;
+  padding-top: 5%;
 }
 
 .footer {
