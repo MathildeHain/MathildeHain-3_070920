@@ -309,15 +309,6 @@
     }
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .container__menu__informations {
     &:hover > .container__menu__informations__animation {
         display: flex;
@@ -359,5 +350,21 @@
 
     &__animation {
         color: $colour-quaternary;
+    }
+}
+
+/*Animation for rotating icone*/ 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container__menu__informations {
+    &:hover > .container__menu__informations__animation i{
+        animation: spin 0.5s linear;
     }
 }
